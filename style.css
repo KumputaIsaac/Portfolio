@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root{
     --header-height: 3rem;
     --nav-width: 324px;
 
     --font-medium:500;
     --font-semi-bold:600;
-    --font-bold:700;
-    --body-font: 'Grandstander', cursive;
+    --font-bold:900;
+    --body-font: 'Roboto', sans-serif;
 
-    --first-color: #cc4b2c;
+    --first-color: #592222;
     --first-color-dark: #662616;
     --first-color-darken: #290f09;
     --text-color: #54423d;
@@ -84,6 +86,7 @@ img{
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 10px 0;
 }
 
 .section{
@@ -104,7 +107,7 @@ img{
     color: var(--first-color-darken);
     text-align: center;
     font-weight: var(--font-bold);
-    margin-bottom: .25rem;
+    margin-bottom: 5rem;
 }
 
 .bd-grid{
@@ -249,6 +252,8 @@ img{
 
 .home_button{
     width: 100%;
+    color: var(--first-color-light);
+    font-weight: 500;
 }
 
 .button{
@@ -287,6 +292,10 @@ img{
     margin-bottom: var(--mb-4);
 }
 
+p.about{
+    margin: 20px 0 10px 0;
+}
+
 .about_img{
     width: 150px;
     border-radius: .5rem;
@@ -307,7 +316,7 @@ img{
     display: flex;
     align-items: center;
     padding-left: 1.5rem;
-    
+    font-weight: bold;
     margin-bottom: var(--mb-3);
 }
 
@@ -327,10 +336,16 @@ img{
     font-size: var(--small-font-size);
 }
 
-
-.skill_container{
-    row-gap: 2rem;
+.about_information-subtitle-small ol{
+    padding-left: 12px;
+    font-weight: var(--font-semi-bold);
+    font-size: var(--normal-font-size);
 }
+
+
+/* .skill_container{
+    row-gap: 2rem;
+} */
 
 .skill_subtitle{
      font-size: var(--h3-font-size);
@@ -427,9 +442,10 @@ img{
 
 .services_content{
     padding: 1.5rem .5rem;
-    border: 2px solid var(--first-color);
+    border: 1px solid var(--first-color);
     border-radius: .5rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .service_icon{
@@ -440,6 +456,7 @@ img{
     border-radius: 50%;
     margin-bottom: var(--mb-2);
 }
+
 .services_title{
     font-size: 1.25rem;
     columns: var(--first-color-dark);
@@ -614,6 +631,15 @@ img{
     color: var(--first-color);
 }
 
+@media screen and (max-width: 768px){
+    .skill_container{
+        display: flex;
+    }
+    .fam{
+        margin-left: auto;
+    }
+}
+
 @media screen and (min-width: 768px){
     .home_button{
         width: initial;
@@ -659,6 +685,13 @@ img{
     }
     .project_title,.project_data{
         text-align: initial;
+    }
+    a.button.button_light{
+        margin-top: 20px;
+    }
+    span.work_title{
+        color: var(--first-color-light) !important;
+        font-weight: bolder;
     }
     .project_img{
         width: 230px;
@@ -711,3 +744,58 @@ img{
     }
   }
  
+/* new */
+
+h2.name{
+    text-align: center;
+}
+
+.work_img ul{
+    margin-top: 10px;
+}
+
+.skill_content ul{
+    margin-left: 10px;
+    list-style: disc;
+}
+
+
+/* footer  */
+.footer {
+    overflow: hidden;
+    padding: 50px;
+    background-color: #290f09;
+    color: #bababa;
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 18px
+  }
+  .footer p i {
+    color: red;
+  }
+  
+
+.button2{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.button2 button{
+    color: var(--first-color-darken);
+    outline: none;
+    background-color: transparent;
+    border: 2px solid var(--first-color-darken);
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: var(--font-medium);
+}
+
+.button2 button:hover{
+    color: var(--first-color-light);
+    border-color: var(--first-color-light);
+}

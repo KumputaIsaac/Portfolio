@@ -1,3 +1,1 @@
 # Portfolio
-
-adeolaaa.netlify.app
