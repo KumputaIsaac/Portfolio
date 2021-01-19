@@ -273,6 +273,7 @@ img{
 .button_light{
     background-color: var(--first-color-lighten);
     color: var(--first-color);
+    margin: 20px 0;
 }
 
 .button_light:hover{
@@ -547,7 +548,8 @@ p.about{
 
 .work_title{
     font-size: var(--h2-font-size);
-    columns: var(--first-color-lighten);
+    color: var(--first-color-lighten);
+    font-weight: var(--font-bold);
 }
 
 .work_img:hover .works_data{
